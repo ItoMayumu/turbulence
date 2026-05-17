@@ -1,0 +1,15 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// 👇 エラーの原因となっていた、流体モデルの指定（ニュートン流体）
+transportModel  Newtonian;
+
+// 👇 25℃の水の動粘度（𝜈 = 8.93 × 10^-7 m²/s）
+nu              [0 2 -1 0 0 0 0] 8.93e-07;

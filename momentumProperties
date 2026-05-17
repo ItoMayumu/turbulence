@@ -1,0 +1,8 @@
+simulationType  RAS;
+
+RAS
+{
+    model           standardKEpsilon;
+    turbulence      off;   
+    printCoeffs     on;
+}
